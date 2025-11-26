@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "query": "Patient with type 2 diabetes mellitus without complications",
+    "expected_icd10": ["E11.9", "E11"],
+    "expected_cpt": ["99213", "99214"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "query": "Chest pain with hypertension and shortness of breath",
+    "expected_icd10": ["R07.9", "I10", "R06.02"],
+    "expected_cpt": ["99285", "99284"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "query": "Annual wellness visit for established patient",
+    "expected_icd10": ["Z00.00"],
+    "expected_cpt": ["99213", "99395", "99396"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "query": "Acute bronchitis with persistent cough",
+    "expected_icd10": ["J20.9", "R05"],
+    "expected_cpt": ["99213", "99214"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "query": "Total knee arthroplasty replacement surgery",
+    "expected_icd10": ["M17.9"],
+    "expected_cpt": ["27447"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "query": "Patient presents with severe headache, nausea, and photophobia",
+    "expected_icd10": ["G43.909", "R51", "R11.0"],
+    "expected_cpt": ["99284", "99285"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "query": "Follow-up visit for hypertension management",
+    "expected_icd10": ["I10"],
+    "expected_cpt": ["99213", "99214"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "query": "Open repair of abdominal aortic aneurysm",
+    "expected_icd10": ["I71.4"],
+    "expected_cpt": ["34830", "35081"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "query": "Type 2 diabetes with diabetic nephropathy",
+    "expected_icd10": ["E11.21", "E11.9"],
+    "expected_cpt": ["99213", "99214"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "query": "Finger amputation due to trauma",
+    "expected_icd10": ["S68.9"],
+    "expected_cpt": ["26951", "26952"],
+    "difficulty": "hard"
+  }
+]

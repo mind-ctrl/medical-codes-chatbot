@@ -1,0 +1,26 @@
+# Build tools (install first)
+setuptools>=68.0.0
+wheel>=0.41.0
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Database
+asyncpg>=0.29.0
+pgvector>=0.2.3
+
+# Embeddings (install torch separately for better control)
+sentence-transformers>=2.2.0
+
+# LLM
+openai>=1.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+numpy>=1.24.0
