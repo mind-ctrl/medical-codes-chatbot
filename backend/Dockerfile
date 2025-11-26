@@ -21,8 +21,8 @@ COPY app/ ./app/
 # Make sure scripts are found in PATH
 ENV PATH=/root/.local/bin:$PATH
 
-# Expose port
-EXPOSE 8000
+# Expose port (Render uses dynamic PORT)
+EXPOSE 10000
 
-# Run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run the application (use PORT env var for Render compatibility)
+CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}
