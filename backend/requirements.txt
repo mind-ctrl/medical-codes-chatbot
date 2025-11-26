@@ -14,7 +14,11 @@ pydantic-settings>=2.1.0
 asyncpg>=0.29.0
 pgvector>=0.2.3
 
-# Embeddings (install torch separately for better control)
+# PyTorch CPU-only (MUST be before sentence-transformers to avoid CUDA bloat)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0+cpu
+
+# Embeddings
 sentence-transformers>=2.2.0
 
 # LLM
