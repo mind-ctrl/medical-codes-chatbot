@@ -3,8 +3,8 @@ FROM python:3.10-slim as builder
 
 WORKDIR /app
 
-# Install dependencies (paths relative to repo root for Railway)
-COPY backend/requirements.txt .
+# Install dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Final stage
@@ -15,8 +15,8 @@ WORKDIR /app
 # Copy Python dependencies from builder
 COPY --from=builder /root/.local /root/.local
 
-# Copy application code (paths relative to repo root for Railway)
-COPY backend/app/ ./app/
+# Copy application code
+COPY app/ ./app/
 
 # Make sure scripts are found in PATH
 ENV PATH=/root/.local/bin:$PATH
